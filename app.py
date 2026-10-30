@@ -9,8 +9,8 @@ st.caption("Upload today's CM1 file and Meroshare transfer report to see who has
 
 c1, c2, c3 = st.columns(3)
 cm_file = c1.file_uploader("1. CM1 file (xls / xlsx / csv)", type=["xls", "xlsx", "csv"])
-mero_file = c2.file_uploader("2. Meroshare transfer report (csv / xlsx)", type=["csv", "xls", "xlsx"])
-contact_file = c3.file_uploader("3. Client contact list (name, code, mobile)", type=["xls", "xlsx", "csv"])
+mero_file = c2.file_uploader("2. Meroshare transfer report (xls / xlsx / csv)", type=["csv", "xls", "xlsx"])
+contact_file = c3.file_uploader("3. Commission report (name, code, mobile)", type=["xls", "xlsx", "csv"])
 
 if not (cm_file and mero_file):
     st.info("Please upload the CM1 file and the Meroshare transfer report to continue.")
